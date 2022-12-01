@@ -42,18 +42,45 @@
                     <span>Profile</span>
                 </div>
             </nav>
-            <div class="playToDate">
-                <h1>Play to date !</h1>
-            </div>
+            
         </header>
 
 <!--  MAIN  -->
 
         <main>
             <article>
-                <button>
-                    Go !
-                </button>
+                <div id="lanchGame">
+                    <div class="playToDate">
+                        <h1>Play to date !</h1>
+                    </div>
+                    <button id="btnLanchGame">
+                        Go
+                    </button>
+                </div>
+                <div id="game">
+                    <div class="heart">
+                        <ul>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" viewBox="0 0 391.837 391.837" xml:space="preserve"> <path d="M285.257,35.528c58.743,0.286,106.294,47.836,106.58,106.58 c0,107.624-195.918,214.204-195.918,214.204S0,248.165,0,142.108c0-58.862,47.717-106.58,106.58-106.58l0,0 c36.032-0.281,69.718,17.842,89.339,48.065C215.674,53.517,249.273,35.441,285.257,35.528z"></path></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" viewBox="0 0 391.837 391.837" xml:space="preserve"> <path d="M285.257,35.528c58.743,0.286,106.294,47.836,106.58,106.58 c0,107.624-195.918,214.204-195.918,214.204S0,248.165,0,142.108c0-58.862,47.717-106.58,106.58-106.58l0,0 c36.032-0.281,69.718,17.842,89.339,48.065C215.674,53.517,249.273,35.441,285.257,35.528z"></path></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" viewBox="0 0 391.837 391.837" xml:space="preserve"> <path d="M285.257,35.528c58.743,0.286,106.294,47.836,106.58,106.58 c0,107.624-195.918,214.204-195.918,214.204S0,248.165,0,142.108c0-58.862,47.717-106.58,106.58-106.58l0,0 c36.032-0.281,69.718,17.842,89.339,48.065C215.674,53.517,249.273,35.441,285.257,35.528z"></path></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" viewBox="0 0 391.837 391.837" xml:space="preserve"> <path d="M285.257,35.528c58.743,0.286,106.294,47.836,106.58,106.58 c0,107.624-195.918,214.204-195.918,214.204S0,248.165,0,142.108c0-58.862,47.717-106.58,106.58-106.58l0,0 c36.032-0.281,69.718,17.842,89.339,48.065C215.674,53.517,249.273,35.441,285.257,35.528z"></path></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" viewBox="0 0 391.837 391.837" xml:space="preserve"> <path d="M285.257,35.528c58.743,0.286,106.294,47.836,106.58,106.58 c0,107.624-195.918,214.204-195.918,214.204S0,248.165,0,142.108c0-58.862,47.717-106.58,106.58-106.58l0,0 c36.032-0.281,69.718,17.842,89.339,48.065C215.674,53.517,249.273,35.441,285.257,35.528z"></path></svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <canvas id="gameCanvas">
+
+                    </canvas>
+                </div>
             </article>
         </main>
 
@@ -69,9 +96,34 @@
             </small>
         </footer>
 
+        <div class="popin" id="idpopin">
+            <div class="popinBox">
+                <div class="popinh1">
+                    <h1>Congratulation you won !</h1>
+                </div>
+                <div class="popinContent">
+                    <div class="contentText">
+                        <div class="popinHeader">
+                            <h2>Contact your Date !</h2>
+                        </div>
+                        <div class="popinBody">
+                            <p>06 00 00 00 06</p>
+                            <p>bob@gmail.com</p>
+                        </div>
+                        <div class="popinFooter">
+                            <a id="btnstaf" href="pagestaf.html">
+                                Je vous presente le staf 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 <!--  JS  -->
 
         <script src="/assets/js/main.js" defer></script>
+        <script src="/assets/js/main2.js" defer></script>
 
     </body>
 </html>

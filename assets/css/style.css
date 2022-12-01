@@ -46,7 +46,7 @@
           color: var(--color-primary);
      }
 
-     header .playToDate {
+     main #lanchGame .playToDate {
           display: flex;
           justify-content: center;
           color: var(--color-tertiary);
@@ -60,11 +60,29 @@
      }
 
      main article {
-          display: flex;
           height: 100%;
           width: 100%;
+          
      }
 
+     #lanchGame {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          /* display: none; TODO: remove this line */
+
+     }
+     #game {
+          display: none;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+     }
+     #game #gameCanvas {
+          /* border: 2px dotted var(--color-tertiary); */
+          height: 100%;
+     }
      main article button {
           background-color: var(--color-secondary);
           height: 100%;
@@ -74,7 +92,14 @@
           border: 0;
           max-width: 290px;
           max-height: 290px;
-          
+          font-size: calc(17px + 18vh);
+          line-height: calc(17px + 20vh);
+          text-shadow: 0 0 5px #FFD0FA, 0 0 15px #FFD0FA, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #FFD0FA, 0 0 10px #ff8d00, 0 0 98px #FFD0FA;
+          color: #fff6a9;
+          font-family: "Sacramento", cursive;
+          text-align: center;
+          animation: blink 12s infinite;
+          -webkit-animation: blink 12s infinite;
           
      }
 
@@ -97,9 +122,94 @@
           color: var(--color-secondary);
           text-decoration: none;
      }
+
+     .popin {
+          position: absolute;
+          height: 100vh;
+          background: var(--color-primary);
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          display: none;
+     }
+     .popin .popinBox {
+        width: 100%;
+     }
+     .popin .popinContent {
+          margin: auto;
+          min-height: 150px;
+          text-align: center;
+          color: var(--color-primary);
+          max-width: 600px;
+          width: inherit;
+          width: 100%;
+     }
+     .popin .popinContent .contentText{
+        background-color: var(--color-secondary);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        margin:30px;
+        display: flex;
+        flex-direction: column;
+     }
+     .popin h1 {
+          color: var(--color-tertiary);
+          font-size: 25px;
+          text-align: center;
+     }
+     .popin .popinHeader {
+          font-size: 30px;
+          font-weight: bold;
+     }
+     .popin .popinBody {
+          font-size: 25px;
+          font-weight: bold;
+          margin-top: 41px;
+          margin-bottom: 41px;
+          line-height: 42px;
+     }
+     .popin .popinFooter {
+          font-size: 21px;
+          font-weight: bold;
+          display: flex;
+          margin:auto;
+     }
+     .popin .popinFooter a {
+          padding: 10px;
+          text-decoration: none;
+          background: var(--color-tertiary);
+          border-radius: 5px;
+          color: var(--color-primary);
+     }
+     .popin .popinFooter a:hover {
+          background: var(--color-primary);
+          color: var(--color-tertiary);
+     }
+     #game .heart ul {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+     }
+     #game .heart ul li {
+          margin: auto;
+     }
+     #game .heart svg {
+          fill: var(--color-tertiary);
+          height: 45px;
+          width: auto;
+     }
+     
 @media (min-width: 320px) { 
      
 }
 @media (min-width: 768px) { 
-     
+     .popin .popinHeader {
+          font-size: 40px;
+          font-weight: bold;
+     }
 }
